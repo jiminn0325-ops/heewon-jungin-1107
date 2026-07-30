@@ -372,15 +372,6 @@ section{padding:72px 34px}
     </div>
   </section>
 
-  <!-- FOOTER -->
-  <div class="footer" style="padding-top:70px">
-    <div class="n">Heewon &amp; Jungin</div>
-    <div class="d">2026 . 11 . 07</div>
-    <div class="share">
-      <button id="copyLink">링크 복사</button>
-      <button id="kakaoShare">카카오톡 공유</button>
-    </div>
-  </div>
 
 </div>
 
@@ -509,8 +500,6 @@ document.getElementById('rsvpSubmit').onclick=()=>{
   document.getElementById('rsvpBox').innerHTML='<div class="done">참석 의사가 전달되었습니다.<br>감사합니다 ♥</div>';
 };
 
-document.getElementById('copyLink').onclick=()=>copy(location.href);
-document.getElementById('kakaoShare').onclick=()=>toast('카카오 공유는 앱키 연동이 필요해요');
 
 // reveal
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.12});
