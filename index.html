@@ -431,7 +431,7 @@ document.getElementById('featureimg').src = DATA.feature;
   if(gh) gh.style.marginTop = DATA.pChildGroom ? '14px' : '16px';
   // 신부 손편지: 폴라로이드에서 조금 내리고 크게(가독성)
   var bh=document.querySelector('#phwBride .phw');
-  if(bh){ bh.style.maxWidth='100%'; bh.style.marginTop = DATA.pChildBride ? '-14px' : '16px'; }
+  if(bh){ bh.style.maxWidth='88%'; bh.style.marginTop = DATA.pChildBride ? '-14px' : '16px'; }
   // 자료가 하나도 없는 블록은 공개용에서 숨김
   if(!DATA.pWedGroom && !DATA.pChildGroom && !DATA.pHwGroom){var eg=document.getElementById('pGroom'); if(eg) eg.style.display='none';}
   if(!DATA.pWedBride && !DATA.pChildBride && !DATA.pHwBride){var eb=document.getElementById('pBride'); if(eb) eb.style.display='none';}
